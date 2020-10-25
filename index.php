@@ -52,10 +52,13 @@
                             <th><?php echo $row['lname']; ?></th>
                             <th><?php  echo $row['contact'];?></th>
                             <form action="update.php" method="post">
-                            <input type="hidden" name="id" value="<?php echo $row['id'] ?>">
-                                <th><input type="submit" name="edit" class="btn btn-success" value="EDIT"></a></th>
+                                <input type="hidden" name="id" value="<?php echo $row['id'] ?>">
+                                <th><input type="submit" name="edit" class="btn btn-success" value="EDIT"></th>
                             </form>
-                            <th><a href="" class="btn btn-danger">DELETE</a></th>
+                            <form action="delete.php" method="post">
+                                <input type="hidden" name="id" value="<?php echo $row['id'] ?>">
+                                <th><input type="submit" name="delete" value="DELETE" class="btn btn-danger"></th>
+                            </form>
                         </tr>
                     </tbody>
 
