@@ -15,7 +15,11 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h2>PHP-CRUD : Display data in php</h2>.
+            <h2>PHP-CRUD : Display data in php</h2>
+            <div class="row">
+                <a href="" class="btn btn-success " style="margin-left:80%;">Add Data</a>
+            </div>
+            </br>
             <tr>
                 <?php 
                     $connection = mysqli_connect("localhost","root","");
@@ -47,12 +51,12 @@
                             <th><?php echo $row['fname'];?></th>
                             <th><?php echo $row['lname']; ?></th>
                             <th><?php  echo $row['contact'];?></th>
-                            <th></th>
-                            <th></th>
+                            <th><a href="" class="btn btn-primary">EDIT</a></th>
+                            <th><a href="" class="btn btn-danger">DELETE</a></th>
                         </tr>
                     </tbody>
 
-                <?php
+                    <?php
                         }
 
                     }
