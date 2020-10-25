@@ -17,7 +17,7 @@
         <div class="jumbotron">
             <h2>PHP-CRUD : Display data in php</h2>
             <div class="row">
-                <a href="" class="btn btn-success " style="margin-left:80%;">Add Data</a>
+                <a href="insert.php" class="btn btn-success " style="margin-left:80%;">Add Data</a>
             </div>
             </br>
             <tr>
